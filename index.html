@@ -7,6 +7,47 @@
     <title>EarthLz</title>
 </head>
 <body>
+     <header id="banner">
+        <h1>Bienvenidos a mi Página</h1>
+        <button id="tema">Cambiar tema</button>
+    </header>
+    <main>
+        <section id="sobremi">
+            <article>
+                <h2>Sobre Mi</h2>
+                <p>Me llamo Lizeth, actualmente curso la carrera de IDGS.
+                    Esta página esta hecha con HTML, CSS, JavaScript, tambien se subio a un
+                    repositorio de GitHub y a Azure.
+                </p>
+            </article>
+        </section>
+        <section id="lenguajes">
+            <h2>Lo que sé</h2>
+            <div class="contenedor-lenguajes">
+                <div class="lenguaje"><p>HTML</p></div>
+                <div class="lenguaje"><p>CSS</p></div>
+                <div class="lenguaje"><p>JavaScript</p></div>
+                <div class="lenguaje"><p>C#</p></div>
+                
+                
+            </div>
+        </section>     
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div id="formulario">
+                <form action="">
+                    <input type="text" placeholder="Tu nombre" id="nombre">
+                    <br>
+                    <input type="email" placeholder="Tu correo" id="correo">
+                    <br>
+                    <input type="submit" value="Enviar" class="envio"  onclick="mensaje()">
+                </form>
+            </div>
+            
+        </section>
+    </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
