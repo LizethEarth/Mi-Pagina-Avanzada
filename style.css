@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.916);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#banner {
+    /* background-color: rgb(9, 9, 64); */
+    background-image: url(img/dog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 100px; 
+}
+
+#banner h1 {
+    background-color: rgba(0, 0, 0, 0.388);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0; 
+}
+
+#banner button {
+    background-color: rgb(9, 9, 64);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    width: 180px;
+    transition: all 0.3s ease; 
+}
+#banner button:hover {
+    background-color: beige;
+    color: black;
+}
+
+
+#sobremi {
+    margin: 30px 100px;
+}
+
+#sobremi p {
+    margin-top: 15px;
+}
+
+#lenguajes {
+    margin: 30px 100px;
+}
+
+.contenedor-lenguajes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: black;
+}
+
+.lenguaje {
+    flex: 1 1 200px; 
+    padding: 20px;
+    border: 1px solid ghostwhite;
+    border-radius: 10px;
+    background-color: rgb(240, 236, 236);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; 
+}
+
+.lenguaje:hover {
+    box-shadow: 1px 1px 5px 2px rgb(187, 185, 185); 
+}
+
+.lenguaje p {
+    font-weight: 500;
+}
+
+
+#contacto {
+    text-align: center;
+    border-radius: 11px;
+    padding: 10px;
+   
+}
+
+#formulario {
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+#formulario input {
+    width: 100%; 
+    max-width: 600px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#formulario .envio {
+    background-color: rgb(9, 9, 64);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#formulario .envio:hover {
+    background-color: black;
+}
+/* modo oscuro */
+body.tema{
+    background-color: rgb(1, 1, 14);
+    color: white
+}
+body.tema #banner{
+    background-image: url(img/gato.jpg);
+}
